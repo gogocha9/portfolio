@@ -1,17 +1,3 @@
-// 타이핑 효과
-const content = "Belief";
-const text = document.querySelector(".text");
-let i = 0;
-
-function typing() {
-  if (i < content.length) {
-    let txt = content.charAt(i);
-    text.innerHTML += txt === "\n" ? "<br/>" : txt;
-    i++;
-  }
-}
-setInterval(typing);
-
 // 텍스트 서서히 올라오는 효과
 const articles = document.querySelectorAll(".article");
 
