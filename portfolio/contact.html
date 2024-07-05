@@ -30,7 +30,7 @@
     <meta name="robots" content="index,nofollow" />
     <meta
       name="description"
-      content="Belief는 전문적인 지식을 바탕으로 어떻게 마케팅을 해야 효과적인지
+      content="믿음은 전문적인 지식을 바탕으로 어떻게 마케팅을 해야 효과적인지
     personal Training 으로 솔루션을 제공합니다. 정확한 상담 및 컨설팅을 위해 상담 신청서를
     작성해주셔야 상담, 컨설팅, 교육 등 가능합니다."
     />
@@ -116,22 +116,27 @@
             <h2>온라인 마케팅/광고 문의</h2>
           </div>
           <div class="form-line">
-            <form>
+            <form onsubmit="sendEmail(event)">
               <div class="form-group">
-                <label for="">업체명/담당자명</label>
-                <input type="text" />
+                <label for="Fname">업체명/담당자명</label>
+                <input type="text" id="Fname" />
               </div>
 
               <div class="form-group">
-                <label for="">연락처</label>
-                <input type="text" />
+                <label for="Fphone">연락처</label>
+                <input
+                  id="Fphone"
+                  type="text"
+                  oninput="oninputPhone(this)"
+                  maxlength="14"
+                />
               </div>
 
               <div class="form-group">
-                <label for="">문의 내용</label>
-                <textarea></textarea>
+                <label for="Fcontent">문의 내용</label>
+                <textarea id="Fcontent"></textarea>
               </div>
-              <button type="submit">문의하기</button>
+              <input id="sendButton" type="submit" value="문의하기" />
             </form>
           </div>
         </div>

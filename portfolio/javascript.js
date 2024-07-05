@@ -51,3 +51,25 @@ mNavbar_link[3].onclick = () => {
   nav.classList.toggle("active");
   mNavbar.classList.toggle("active");
 };
+
+function oninputPhone(target) {
+  target.value = target.value
+    .replace(/[^0-9]/g, "")
+    .replace(/(^02.{0}|^01.{1}|[0-9]{3,4})([0-9]{3,4})([0-9]{4})/g, "$1-$2-$3");
+}
+
+// 이메일 보내기
+function sendEmail(event) {
+  event.preventDefault();
+  var name = document.getElementById("Fname").value;
+  var phone = document.getElementById("Fphone").value;
+  var message = document.getElementById("Fcontent").value;
+  var subject = "문의하기 폼: " + name;
+  var body = "이름: " + name + "\n연락처: " + phone + "\n내용: " + message;
+  var mailtoLink =
+    "mailto:gogocha9@naver.com?subject=" +
+    encodeURIComponent(subject) +
+    "&body=" +
+    encodeURIComponent(body);
+  window.location.href = mailtoLink;
+}

@@ -441,6 +441,10 @@ main #Numbers {
 
 /* Contact Us */
 
+#wrap #contact_box.container {
+  margin: 100px 0;
+}
+
 #wrap #contact_box.container .form_box {
   margin: 0 auto;
   width: 500px;
@@ -453,6 +457,7 @@ main #Numbers {
 }
 
 #contact_box.container .form_box .title_box {
+  margin-bottom: 40px;
 }
 
 #contact_box.container .form_box .title_box h2 {
@@ -474,6 +479,7 @@ main #Numbers {
 #contact_box.container .form_box .form-line form .form-group {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 #contact_box.container .form_box .form-line form .form-group label {
@@ -504,7 +510,7 @@ main #Numbers {
   font-size: 1rem;
 }
 
-#contact_box.container .form_box .form-line form button {
+#contact_box.container .form_box .form-line form #sendButton {
   font-size: 1.1rem;
   padding: 10px 0;
   background-color: #2162b8;
