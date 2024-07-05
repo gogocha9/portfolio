@@ -31,7 +31,9 @@ div {
   font-family: "Noto Sans KR", sans-serif;
 }
 
-.Main-Color {
+.Main-Color,
+em,
+strong {
   color: #2162b8;
 }
 
