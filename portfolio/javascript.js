@@ -64,12 +64,20 @@ function sendEmail(event) {
   var name = document.getElementById("Fname").value;
   var phone = document.getElementById("Fphone").value;
   var message = document.getElementById("Fcontent").value;
-  var subject = "문의하기 폼: " + name;
+  var subject = "홈페이지 문의하기 : " + name;
   var body = "이름: " + name + "\n연락처: " + phone + "\n내용: " + message;
   var mailtoLink =
-    "mailto:gogocha9@naver.com?subject=" +
+    "mailto:belief8585@naver.com?subject=" +
     encodeURIComponent(subject) +
     "&body=" +
     encodeURIComponent(body);
   window.location.href = mailtoLink;
+}
+
+function popup() {
+  var url = "popup/term_01.html";
+  var name = "약관보기";
+  var option =
+    "width = 700, height = 500, top = 100, left = 200, location = no";
+  window.open(url, name, option);
 }

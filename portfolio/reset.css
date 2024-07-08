@@ -44,6 +44,10 @@ strong {
   margin: 140px 0 40px 0;
 }
 
+.popup_link {
+  color: #347cdb;
+}
+
 a {
   text-decoration: none;
 }
